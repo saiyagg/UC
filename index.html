@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UC浏览器官方首页</title>
+        <link href="CSS/style.css" rel="stylesheet"/>
+        <script src="jquery.min.js"></script>
+        <script src="./JS/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <a href="#">  <img src="images/uclogo.png" width="auto" height="50px" border="0"
+                     style="margin-top: 10px;margin-bottom: 10px;margin-right: 0px;"> </a>
+
+            </div>
+            <div class="navbar">
+               <ul class="nav">
+                   <li class="active"><a href="#">首页</a></li>
+                   <li class="dropdown">
+                       <a href="#" class="dropdown-toggle">下载</a>
+                       <ul class="dropdown-meun">
+                           <li class="arrow"></li>
+                           <li><a href="#">手机UC</a></li>
+                           <li><a href="#">UC头条</a></li>
+                           <li><a href="#">电脑浏览器</a></li>
+                           <li><a href="#">TV浏览器</a></li>
+                           <li><a href="#">Android实验室版</a></li>
+                       </ul>
+                   </li>
+                   <li class="dropdown">
+                       <a href="#" class="dropdown-toggle">公司</a>
+                       <ul class="dropdown-meun">
+                           <li class="arrow"></li>
+                           <li><a href="#">公司概况</a></li>
+                           <li><a href="#">公司动态</a></li>
+                           <li><a href="#">管理团队</a></li>
+                           <li><a href="#">企业文化</a></li>
+                           <li><a href="#">粉丝专区</a></li>
+                           <li><a href="#">荣誉之旅</a></li>
+                           <li><a href="#">联系我们</a></li>
+                           <li><a href="#">UC闪屏</a></li>
+                           <li><a href="#">吉祥物专区</a></li>
+                       </ul>
+                   </li>
+                   <li class="dropdown">
+                       <a href="#" class="dropdown-toggle">合作</a>
+                       <ul class="dropdown-meun">
+                           <li class="arrow"></li>
+                           <li><a href="#">广告合作</a></li>
+                           <li><a href="#">大鱼号</a></li>
+                           <li><a href="#">运营商合作</a></li>
+                           <li><a href="#">终端厂商合作</a></li>
+                           <li><a href="#">互联网合作</a></li>
+                           <li><a href="#">开发者中心</a></li>
+                           <li><a href="#">安卓开发平台</a></li>
+                           <li><a href="#">游戏开放平台</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">校园</a></li>
+                   <li><a href="#">社区</a></li>
+                   <li><a href="#">帮助</a></li>
+               </ul>
+            </div>
+        </div>
+        <!--中间图-->
+        <div class="image-show">
+            <ul class="slider-box">
+                <li class="slider">
+                    <div class="banner-bg" style="background-image:url('images/pc_banner_20170906_1.png') ">
+                        <div class="banner">
+                            <a href="#" class="btn-uc-an"></a>
+                            <a href="#" class="btn-uc-ios"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="point">
+                <a href="#" class="choose"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+        <!--下载区-->
+        <div class="plat">
+            <div class="download">
+                <div class="qr-code qr-code-uc" >
+                    <img src="images/qr_code_uc.png"/>
+                    <br/>
+                    手机扫一扫下载
+                </div>
+                <div class="qr-code qr-code-tt">
+                    <img src="images/qr_code_tt.png"/>
+                    <br/>
+                    手机扫一扫下载
+                </div>
+                <ul class="plat-list">
+                    <li class="play-no">
+                       <a href="#" >
+                           <div class="ico uc-an"></div>
+                           <div class="text">Android版下载</div>
+                       </a>
+                    </li>
+                    <li class="play-no">
+                        <a href="#" >
+                            <div class="ico uc-an1"></div>
+                            <div class="text">Android版下载</div>
+                        </a>
+                    </li>
+                    <li class="play-no" style="width: 150px;border-right: 1px solid #eeeeee">
+                        <a href="#" >
+                            <div class="ico uc-an2"></div>
+                            <div class="text">Android版下载</div>
+                        </a>
+                    </li>
+                    <li class="play-no">
+                        <a href="#" >
+                            <div class="ico uc-an3"></div>
+                            <div class="text">Android版下载</div>
+                        </a>
+                    </li>
+                    <li class="play-no">
+                        <a href="#" >
+                            <div class="ico uc-an4"></div>
+                            <div class="text">Android版下载</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<script>
+    $(".plat-list li").hover(function(){
+        <!--this指当前获取鼠标焦点li的对象-->
+        <!--$(this)将dom对象转变成jquery对象，目的是使用jQuery的函数-->
+        $(this).attr("class","play-go")
+
+    },function(){
+        $(this).attr("class","play-back")
+    }
+</script>
+        <!--新闻区-->
+    <div class="news clearfix">
+       <dl class="list-news">
+           <dt>
+               <h3>活动专区</h3>
+           <a href="#">更多<span></span></a>
+           </dt>
+           <dd>
+               <div class="new">
+                   <a href="">
+                       <img src="images/banner290_170825.jpg" >
+                       <div class="t">UC开学季活动火热进行中</div>
+                   </a>
+               </div>
+               <ul>
+                   <li><a href="#">减肥但是可怜见</a></li>
+                   <li><a href="#">大师傅客户的法律和深度和封建士大夫似的哈哈发收到甲方设计的楼房是否含税单价十分</a></li>
+                   <li><a href="#">似的士大夫</a></li>
+                   <li><a href="#">撒发射点发射点发射点</a></li>
+                   <li><a href="#">萨芬士大夫是</a></li>
+               </ul>
+           </dd>
+       </dl>
+        <dl class="list-news">
+            <dt>
+            <h3>活动专区</h3>
+            <a href="#">更多<span></span></a>
+            </dt>
+            <dd>
+                <div class="new">
+                    <a href="">
+                        <img src="images/news31.jpg" >
+                        <div class="t">UC开学季活动火热进行中</div>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#">减肥但是可怜见</a></li>
+                    <li><a href="#">大师傅客户的法律和深度和封建士大夫似的哈哈发收到甲方设计的楼房是否含税单价十分</a></li>
+                    <li><a href="#">似的士大夫</a></li>
+                    <li><a href="#">撒发射点发射点发射点</a></li>
+                    <li><a href="#">萨芬士大夫是</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="list-news" style="margin-right: 0px;">
+            <dt>
+            <h3>活动专区</h3>
+            <a href="#">更多<span></span></a>
+            </dt>
+            <dd>
+                <div class="new">
+                    <a href="">
+                        <img src="images/23.jpg" >
+                        <div class="t">UC开学季活动火热进行中</div>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#">减肥但是可怜见</a></li>
+                    <li><a href="#">大师傅客户的法律和深度和封建士大夫似的哈哈发收到甲方设计的楼房是否含税单价十分</a></li>
+                    <li><a href="#">似的士大夫</a></li>
+                    <li><a href="#">撒发射点发射点发射点</a></li>
+                    <li><a href="#">萨芬士大夫是</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+        <!--页脚-->
+    <div class="fbg">
+        <div class="footer">
+            <div class="clearfix">
+                <dl class="sitemap">
+                    <dt>
+                        <a href="#">UC</a>
+                    </dt>
+                    <dd>
+                        <p><a href="#">产品动态</a></p>
+                        <p><a href="#">产品下载</a></p>
+                        <p><a href="#">Android实验室版</a></p>
+                        <p><a href="#">功能介绍</a></p>
+                        <p><a href="#">UC闪屏</a></p>
+                        <p><a href="#">意见反馈</a></p>
+                    </dd>
+                </dl>
+                <dl class="sitemap">
+                    <dt>
+                        <a href="#">公司</a>
+                    </dt>
+                    <dd>
+                        <p><a href="#">公司首页</a></p>
+                        <p><a href="#">公司概况</a></p>
+                        <p><a href="#">公司动态</a></p>
+                        <p><a href="#">管理团队</a></p>
+                        <p><a href="#">企业文化</a></p>
+                        <p><a href="#">粉丝专区</a></p>
+                    </dd>
+                </dl>
+                <dl class="sitemap">
+                    <dt>
+                        <a href="#">UC</a>
+                    </dt>
+                    <dd>
+                        <p><a href="#">产品动态</a></p>
+                        <p><a href="#">产品下载</a></p>
+                        <p><a href="#">解决</a></p>
+                        <p><a href="#">得到</a></p>
+                        <p><a href="#">顶顶顶</a></p>
+                        <p><a href="#">顶顶顶顶</a></p>
+                    </dd>
+                </dl>
+                <dl class="sitemap">
+                    <dt>
+                        <a href="#">UC</a>
+                    </dt>
+                    <dd>
+                        <p><a href="#">产品动态</a></p>
+                        <p><a href="#">产品下载</a></p>
+                        <p><a href="#">解决</a></p>
+                        <p><a href="#">得到</a></p>
+                        <p><a href="#">顶顶顶</a></p>
+                        <p><a href="#">顶顶顶顶</a></p>
+                    </dd>
+                </dl>
+                <dl class="sitemap">
+                    <dt>
+                        <a href="#">UC</a>
+                    </dt>
+                    <dd>
+                        <p><a href="#">产品动态</a></p>
+                        <p><a href="#">产品下载</a></p>
+                        <p><a href="#">解决</a></p>
+                        <p><a href="#">得到</a></p>
+                        <p><a href="#">顶顶顶</a></p>
+                        <p><a href="#">顶顶顶顶</a></p>
+                    </dd>
+                </dl>
+                <dl class="sitemap">
+                    <dt>
+                        <div class="language">
+                    <em></em>
+                    <span>中文版</span>
+                        </div>
+                    </dt>
+                </dl>
+            </div>
+            <div class="glink">
+                <div class="bta-link-d"></div>
+                <div class="links">
+                    <a href="#">阿里巴巴集团</a> |
+                    <a href="#">淘宝网</a> |
+                    <a href="#">天猫</a> |
+                    <a href="#">聚划算</a> |
+                    <a href="#">全球速卖通</a> |
+                    <a href="#">阿里巴巴国际交易市场</a> |
+                    <a href="#">1688</a> |
+                    <a href="#">阿里妈妈</a> |
+                    <a href="#">飞猪</a> |
+                    <a href="#">阿里云计算</a> |
+                    <a href="#">YunOS</a> |
+                    <a href="#">阿里通信</a> |
+                    <a href="#">万网</a> |
+                    <a href="#">高德</a>
+                </div>
+            </div>
+            <div class="flink">
+                <div class="bta-link-d"></div>
+                <div class="links">
+                   友情链接：
+                    <a href="#">阿里巴巴集团</a>|
+                    <a href="#">淘宝网</a>|
+                    <a href="#">天猫</a>|
+                    <a href="#">聚划算</a>|
+                    <a href="#">全球速卖通</a>|
+                    <a href="#">阿里巴巴国际交易市场</a>|
+                    <a href="#">1688</a>|
+                    <a href="#">阿里妈妈</a>|
+                    <a href="#">飞猪</a>|
+                    <a href="#">阿里云计算</a>|
+                    <a href="#">YunOS</a>|
+                    <a href="#">阿里通信</a>|
+                    <a href="#">万网</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    </body>
+</html>

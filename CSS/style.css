@@ -1,0 +1,398 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color: #f60!important;
+}/*鼠标移上去的伪样式*/
+img{
+    vertical-align: middle;
+}
+    .header{
+        width: 990px;
+        height: 70px;
+
+        border: 0px;
+        margin: auto;
+    }/*颜色去除head*/
+
+        .header .logo{
+
+            height: 30px;
+
+            float: left;
+        }/*颜色去除左上,去除宽度*/
+        .header .navbar{
+            width: 650px;
+
+            float: right;
+        }/*颜色去除右上，高度去除*/
+
+            .navbar > .nav > li{
+                float: left;
+                width: 60px;
+                height: 67px;
+                text-align: center;
+                margin: 0 16px;
+                line-height: 70px;
+                font-size: 20px;
+                font-family: "Microsoft YaHei UI","黑体";
+            }
+                .navbar .nav > li:hover .dropdown-meun{
+                    display: block;
+                }
+                .navbar .nav .active{
+                    border-bottom: 3px solid #f60;
+                }/*head中的下滑线*/
+              .nav > .li > a{
+                    display: block;
+
+                }
+              .dropdown{
+                  position: relative;
+                  z-index: 10;
+              }
+              .dropdown-meun{
+                  position: absolute;
+                  width: 142px;
+                  top:70px;
+                  left: -41px;
+                  background-color: rgba(255,255,255,.95);
+                  border: 1px solid #f6f6f6;
+                  display: none;
+              }
+              .dropdown-meun > li{
+                  font-size: 14px;
+                  line-height: 18px;
+              }
+              .dropdown-meun li a{
+                  display: block;
+                  padding: 8px 5px;
+              }
+              .dropdown-meun .arrow{
+                  background-image: url("../images/ico_down_arrow.png");
+                  height: 10px;
+                  width: 20px;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 61px;
+                  top: -10px;
+              }
+    .slider-box{
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    .slider-box .slider{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+    .banner-bg{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        position: relative;
+    }
+    .banner-bg .banner{
+        width: 990px;
+        height: 100%;
+        margin: auto;
+       position: relative;
+
+
+
+    }
+    .btn-uc-an{
+        display: block;
+        width: 145px;
+        height: 45px;
+
+        position: absolute;
+        left: 512px;
+        bottom: 43px;
+    }
+    .btn-uc-ios{
+        display: block;
+        width: 145px;
+        height: 45px;
+
+        position: absolute;
+        right: 512px;
+        bottom: 43px;
+    }/*有问题，之前高度没写*/
+    .image-show{
+        position: relative;
+    }/*中间图片的基底*/
+    .point{
+        width: 100%;
+        height: 20px;
+
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+    }
+    .point a{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: #fefffd;
+        margin: 0 2px;
+        background-image: url("../images/scroll_dot.png");
+    }
+    .point .choose{
+        background-image: url("../images/scroll_dot_cur.png");
+    }
+    .plat{
+        border-bottom: 1px solid #eeeeee;
+    }
+    .download{
+        width: 990px;
+        height: 136px;
+        margin: auto;
+
+        position: relative;
+    }
+    .plat .download .qr-code{
+        width: 88px;
+        height: 110px;
+        background-color: #ff955e;
+        font-size: 12px;
+        color: rgb(153,153,153) ;
+        font-family: 微软雅黑；黑体;
+        text-align: center;
+        position: absolute;
+    }
+    .qr-code-uc{
+        left: 6px;
+        top: 2px;
+    }
+    .qr-code-tt{
+        top: 2px;
+        right: 6px;
+    }
+    .plat .plat-list{
+        height: 135px;
+        margin: 12px 0 0 130px;
+    }
+    .plat .plat-list li{
+        width: 112px;
+        height: 118px;
+        float: left;
+        margin: 0 13px;
+    }
+    .plat .ico{
+        width: 100px;
+        height: 80px;
+        margin: 2px auto 0;
+        background-color: #af7eff;
+    }
+    @keyframes  ani-uc-an-go{
+        0%{
+            background-position: 0 0;
+        }
+        100%{
+            background-position: -1100px 0;
+        }
+    }
+    @keyframes ani-uc-an-back {
+        0%{
+            background-position: -1100px 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+    .play-go .uc-an{
+        background-image: url("../images/sprite_uc_android.png");
+        animation: ani-uc-an-go 2s steps(11) 1 forwards;
+    }
+    .play-back .uc-an{
+        background-image: url("../images/sprite_uc_android.png");
+        animation: ani-uc-an-back 2s steps(11) 1 forwards;
+    }
+    .play-no .uc-an{
+        background-image: url("../images/sprite_uc_android.png");
+    }
+
+
+    .plat .uc-an1{
+        background-image: url("../images/sprite_uc_ios.png");
+    }
+    .plat .uc-an2{
+        background-image: url("../images/sprite_uc_win.png");
+    }
+    .plat .uc-an3{
+        background-image: url("../images/sprite_uct_android.png");
+    }
+    .plat .uc-an4{
+        background-image: url("../images/sprite_uct_ios.png");
+    }
+    .plat .text{
+        font-size: 12px;
+        text-align: center;
+        height: 18px;
+        line-height: 18px;
+        padding-top: 3px;
+    }
+    .news{
+        width: 990px;
+        margin: auto;
+        padding: 35px 0;
+    }
+    .news .list-news{
+        width: 290px;
+        min-height: 100px;
+        margin-right: 58px;
+        float: left;
+
+    }
+    .clearfix:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .news dt{
+        height: 26px;
+        margin-bottom: 20px;
+    }
+    .news dt h3{
+        float: left;
+        font-weight: normal;
+        color: #555555;
+        font-size: 20px;
+
+    }
+    .news dt a{
+        float: right;
+        color: #585858;
+        font-size: 14px;
+
+        margin-top: 5px;
+
+    }
+    .news dt a span{
+        background-image: url("../images/arrow.png");
+        background-position: -28px 0px;
+        width: 12px;
+        height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .news dt a:hover span{
+        background-position: -8px;
+    }/*有问题*/
+    .news .new{
+        height: 155px;
+        margin-bottom: 10px;
+    }
+    .news .new .t{
+        height: 34px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 34px;
+        background-color: #f2f2f2;
+        white-space: nowrap;/*多文字不自动换行*/
+        overflow: hidden;/*超出文字不显示*/
+        text-overflow: ellipsis;/*超出文章用”。。。“显示*/
+    }
+    .list-news li{
+        font-size: 14px;
+        padding-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .fbg{
+        padding: 25px 0 40px;
+        min-height: 100px;
+        background-color: #333;
+        font-size: 12px;
+        color: #666666;
+    }
+    .fbg .footer{
+        width: 990px;
+        margin: auto;
+        min-height: 100px;
+    }
+    .fbg .sitemap{
+        width: 165px;
+        float: left;
+    }
+    .fbg .sitemap dt{
+        font-weight: bold;
+    }
+    .fbg .sitemap a{
+        color: #aaaaaa!important;
+    }
+    .fbg a:hover{
+        color: #f60!important;
+    }
+    .fbg .sitemap .language{
+        width: 128px;
+        height: 16px;
+        border: 1px #434343 solid;
+        padding: 3px 4px;
+        font-size: 14px;
+        background-image: url("../images/ico_lang_arrow.png");
+        background-repeat:no-repeat;
+        background-position: right center;
+    }
+    .fbg .sitemap .language em{
+        display: block;
+        width: 24px;
+        height: 16px;
+        background: url("../images/ico.png") -6px -255px;
+        float: left;
+    }
+    .fbg .sitemap .language span{
+        display: block;
+        height: 16px;
+        line-height: 16px;
+        font-weight: normal;
+    }
+    .glink{
+        margin-top: 20px;
+        border-top: 1px solid #565656;
+        border-bottom: 1px solid #565656;
+        position: relative;
+    }
+    .glink, .flink{
+        position: relative;
+    }/*有问题*/
+    .footer .bta-link-d{
+        width: 16px;
+        height: 16px;
+        background: url("../images/ico.png") -105px -248px;
+        position: absolute;
+        right: 10px;
+        bottom: 9px;
+        cursor: pointer;
+    }
+    .footer .links{
+        padding: 9px 0 9px 10px;
+        height: 19px;
+        line-height: 19px;
+    }
+    .footer .links a{
+        margin: 0 7px;
+        display: inline-block;
+    }
+    .footer .links a:first-child{
+        margin-left: 0;
+    }
+    .footer .flink{
+        border-bottom: 1px dotted #565656;
+        margin-bottom: 20px;
+
+    }
